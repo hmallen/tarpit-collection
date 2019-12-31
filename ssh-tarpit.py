@@ -11,7 +11,7 @@ async def handler(_reader, writer):
         pass
 
 async def main():
-    server = await asyncio.start_server(handler, '0.0.0.0', 22)
+    server = await asyncio.start_server(handler, '0.0.0.0', 2222)
     async with server:
         await server.serve_forever()
 
